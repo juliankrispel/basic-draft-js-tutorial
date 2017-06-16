@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
-import { Editor } from 'draft-js';
+import { Editor, EditorState } from 'draft-js';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      editorState: EditorState.createEmpty(),
+    };
+  }
+
   render() {
     return (
-      <Editor />
+      <Editor
+        editorState={this.state.editorState}
+      />
     );
   }
 }
