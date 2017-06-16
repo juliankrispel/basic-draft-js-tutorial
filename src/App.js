@@ -24,13 +24,20 @@ class App extends Component {
     return 'not-handled';
   }
 
+  onUnderlineClick = () => {
+    this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'UNDERLINE'));
+  }
+
   render() {
     return (
-      <Editor
-        editorState={this.state.editorState}
-        handleKeyCommand={this.handleKeyCommand}
-        onChange={this.onChange}
-      />
+      <div>
+        <button onClick={this.onUnderlineClick}>Underline</button>
+        <Editor
+          editorState={this.state.editorState}
+          handleKeyCommand={this.handleKeyCommand}
+          onChange={this.onChange}
+        />
+      </div>
     );
   }
 }

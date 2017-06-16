@@ -10,3 +10,18 @@ body {
   border-radius: .3em;
   padding: 1em;
 }
+
+button{
+  background: #999;
+  color: #fff;
+  border: none;
+  padding: .5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  border-radius: .2em;
+}
+
+button:hover{
+  background: #888;
+}
