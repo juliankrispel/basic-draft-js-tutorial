@@ -1,3 +1,9 @@
+## Draft js basic tutorial
+
+This is a repository containing all the steps in [this tutorial](http://reactrocket.com/post/getting-started-with-draft-js/)
+
+-------
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
