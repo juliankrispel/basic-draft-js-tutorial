@@ -28,10 +28,15 @@ class App extends Component {
     this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'UNDERLINE'));
   }
 
+  onToggleCode = () => {
+    this.onChange(RichUtils.toggleCode(this.state.editorState));
+  }
+
   render() {
     return (
       <div>
         <button onClick={this.onUnderlineClick}>Underline</button>
+        <button onClick={this.onToggleCode}>Code Block</button>
         <Editor
           editorState={this.state.editorState}
           handleKeyCommand={this.handleKeyCommand}
