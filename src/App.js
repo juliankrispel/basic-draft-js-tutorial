@@ -9,10 +9,15 @@ class App extends Component {
     };
   }
 
+  onChange = (editorState) => {
+    this.setState({ editorState });
+  };
+
   render() {
     return (
       <Editor
         editorState={this.state.editorState}
+        onChange={this.onChange}
       />
     );
   }
